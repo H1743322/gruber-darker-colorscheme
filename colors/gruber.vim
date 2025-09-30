@@ -241,7 +241,7 @@ hi! link Typedef            gruberQuartz
 " Comments
 hi! link @comment           Comment
 hi! link @comment.delimiter CommentDelimiter
-hi! link @comment.todo      SpecialComment
+"hi! link @comment.todo      SpecialComment
 
 " Constants / Literals
 hi! link @constant          Constant
