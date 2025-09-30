@@ -12,6 +12,7 @@ set background=dark
 set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
 
 " {{{ Colors
+" Originals
 let s:gruberFG          = ['#e4e4ef', 253]
 let s:gruberFG1         = ['#f4f4ff', 254]
 let s:gruberFG2         = ['#f5f5f5', 250]
@@ -26,15 +27,21 @@ let s:gruberBG4         = ['#52494e', 239]
 let s:gruberRedm1       = ['#c73c3f', 203]
 let s:gruberRed         = ['#f43841', 160]
 let s:gruberRed1        = ['#ff4f58', 167]
-let s:gruberGreen       = ['#73c936', 70]
-let s:gruberYellow      = ['#ffdd33', 220]
-let s:gruberBrown       = ['#cc8c3c', 172]
+"let s:gruberGreen       = ['#73c936', 70]
+"let s:gruberYellow      = ['#ffdd33', 220]
+"let s:gruberBrown       = ['#cc8c3c', 172]
 let s:gruberQuartz      = ['#95a99f', 108]
 let s:gruberNiagaram2   = ['#303540', 236]
 let s:gruberNiagaram1   = ['#565f73', 103]
 let s:gruberNiagara     = ['#96a6c8', 147]
 let s:gruberWisteria    = ['#9e95c7', 98]
-let s:none              = ['NONE', 'NONE']
+"
+" Tone off colors
+let s:gruberYellow      = ['#f4d844', 221]
+let s:gruberGreen       = ['#86b758', 107]
+let s:gruberBrown       = ['#b38d58', 173]
+"let s:gruberQuartz      = ['#9e9eaf', 248]
+"
 
 let s:gruberBlue        = ['#89b4fa', 111]
 
@@ -42,6 +49,7 @@ let s:gruberBlue        = ['#89b4fa', 111]
 let s:lightYellow       = ['#f9f18c', 180]
 let s:lightRed          = ['#f77b7e', 160]
 let s:lightGreen        = ['#a6e267', 70]
+let s:none              = ['NONE', 'NONE']
 
 let s:bold              = 'bold,'
 let s:underline         = 'underline,'
