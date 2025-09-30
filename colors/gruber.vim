@@ -25,13 +25,13 @@ let s:gruberBG3         = ['#484848', 239]
 let s:gruberBG4         = ['#52494e', 239]
 let s:gruberRedm1       = ['#c73c3f', 203]
 let s:gruberRed         = ['#f43841', 160]
-let s:gruberRedp1       = ['#ff4f58', 167]
+let s:gruberRed1        = ['#ff4f58', 167]
 let s:gruberGreen       = ['#73c936', 70]
 let s:gruberYellow      = ['#ffdd33', 220]
 let s:gruberBrown       = ['#cc8c3c', 172]
 let s:gruberQuartz      = ['#95a99f', 108]
-let s:gruberNiagara2    = ['#303540', 236]
-let s:gruberNiagara1    = ['#565f73', 103]
+let s:gruberNiagaram2   = ['#303540', 236]
+let s:gruberNiagaram1   = ['#565f73', 103]
 let s:gruberNiagara     = ['#96a6c8', 147]
 let s:gruberWisteria    = ['#9e95c7', 98]
 let s:none              = ['NONE', 'NONE']
@@ -87,13 +87,13 @@ call s:HI('gruberBG3',	    s:gruberBG3)
 call s:HI('gruberBG4',	    s:gruberBG4)
 call s:HI('gruberRedm1',	s:gruberRedm1)
 call s:HI('gruberRed',	    s:gruberRed)
-call s:HI('gruberRedp1',	s:gruberRedp1)
+call s:HI('gruberRed1',	    s:gruberRed1)
 call s:HI('gruberGreen',	s:gruberGreen)
 call s:HI('gruberYellow',	s:gruberYellow)
 call s:HI('gruberBrown',	s:gruberBrown)
 call s:HI('gruberQuartz',	s:gruberQuartz)
-call s:HI('gruberNiagara2',	s:gruberNiagara2)
-call s:HI('gruberNiagara1',	s:gruberNiagara1)
+call s:HI('gruberNiagaram2',s:gruberNiagaram2)
+call s:HI('gruberNiagaram1',s:gruberNiagaram1)
 call s:HI('gruberNiagara',	s:gruberNiagara)
 call s:HI('gruberWisteria',	s:gruberWisteria)
 
@@ -105,7 +105,7 @@ call s:HI('lightGreen',	    s:lightGreen)
 " {{{ General:
 call s:HI('Visual',         s:none,             s:gruberBG3)
 call s:HI('VisualNOS',      s:gruberRed)
-call s:HI('Normal',         s:gruberFG,         s:none)
+call s:HI('Normal',         s:gruberFG,         s:gruberBG)
 
 call s:HI('Cursor',         s:none,             s:gruberYellow)
 "call s:HI('lCursor',        s:none,             s:gruberYellow)
@@ -237,7 +237,7 @@ hi! link @comment.todo      SpecialComment
 
 " Constants / Literals
 hi! link @constant          Constant
-hi! link @constant.builtin  Constant
+hi! link @constant.builtin  Keyword
 hi! link @number            Number
 hi! link @float             Float
 hi! link @boolean           Boolean
