@@ -131,7 +131,7 @@ call s:HI('Debug',          s:gruberRedm1)
 call s:HI('Directory',      s:gruberBlue)
 call s:HI('ErrorMsg',       s:gruberRedm1,      s:none)
 "call s:HI('Exception',      s:gruberBrown)
-"call s:HI('Folded',        s:gruberBrown,      s:gruberFG2)        "s:italic)
+"call s:HI('Folded',         s:gruberBrown,      s:gruberFG2)        "s:italic)
 "
 call s:HI('Macro',          s:gruberFG)
 call s:HI('ModeMsg',        s:gruberFG)
@@ -150,10 +150,14 @@ call s:HI('Conceal',        s:gruberFG,         s:gruberBG)
 call s:HI('SignColumn',     s:none,             s:none)
 call s:HI('ColorColumn',    s:none,             s:none)
 call s:HI('FoldColumn',     s:none,             s:none)
-hi! link PmenuSel Visual
-hi! link Pmenu Normal
+
+hi! link PmenuSel           Visual
+hi! link Pmenu              Normal
 call s:HI('PmenuSbar',      s:none,             s:gruberBG1)
 call s:HI('PmenuThumb',     s:none,             s:gruberBG3)
+hi! link FloatBorder        WinSeparator
+
+
 call s:HI('helpExample',    s:gruberYellow)
 call s:HI('helpCommand',    s:gruberYellow)
 call s:HI('Special',        s:gruberFG)
@@ -194,7 +198,7 @@ hi! link Delimiter          gruberFG
 hi! link Tag                gruberYellow
 
 " Constants / Literals
-hi! link Constant           gruberQuartz
+hi! link Constant           gruberFG
 hi! link String             gruberGreen
 hi! link Character          gruberGreen
 hi! link Number             gruberFG
@@ -218,7 +222,7 @@ hi! link Macro              gruberQuartz
 hi! link PreCondit          gruberQuartz
 
 " Types
-hi! link Type gruberQuartz
+hi! link Type               gruberQuartz
 hi! link StorageClass       gruberYellow
 hi! link Structure          gruberNiagara
 hi! link Typedef            gruberQuartz
@@ -290,6 +294,21 @@ hi! link @error             ErrorMsg
 hi! link @todo              WarningMsg
 " }}}
 
+" Cmp: {{{{
+hi! link CmpItemAbbr            Identifier
+hi! link CmpItemAbbrMatch       Keyword
+hi! link CmpItemAbbrMatchFuzzy  Keyword
+hi! link CmpItemKind            Function
+hi! link CmpItemMenu            Identifier
+hi! link CmpItemKindFunction    Function
+hi! link CmpItemKindVariable    Identifier
+hi! link CmpItemKindClass       Structure
+hi! link CmpItemKindInterface   Type
+hi! link CmpItemKindModule      Type
+hi! link CmpItemKindProperty    Identifier
+hi! link CmpItemKindKeyword     Keyword
+hi! link CmpItemKindSnippet     gruberWisteria
+" }}}}"
 
 " Nvim Tree: {{{
 hi! link NvimTreeFolderIcon       Directory
@@ -319,17 +338,17 @@ hi! link TelescopeBorder          WinSeparator
 " }}}
 
 " Diff: {{{{
-hi! link DiffAdd        lightGreen
-hi! link DiffDelete     lightRed
+hi! link DiffAdd            lightGreen
+hi! link DiffDelete         lightRed
 call s:HI('DiffChange',     s:none,             s:gruberBG2)
 call s:HI('DiffText',       s:gruberBlack,      s:gruberQuartz)
 
-hi! link diffAdded      DiffAdd
-hi! link diffRemoved    DiffDelete
-hi! link diffLine       lightYellow
+hi! link diffAdded          DiffAdd
+hi! link diffRemoved        DiffDelete
+hi! link diffLine           lightYellow
 
-hi! link GitSignsAdd      DiffAdd
-hi! link GitSignsDelete   DiffDelete
+hi! link GitSignsAdd        DiffAdd
+hi! link GitSignsDelete     DiffDelete
 call s:HI('GitSignsChange', s:lightYellow)
 
 "}}}}
