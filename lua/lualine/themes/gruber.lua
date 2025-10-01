@@ -1,28 +1,30 @@
--- TODO: remove hardoded colors
+local fg = "#e4e4ef" --gruberFG
+local bg = "#282828" --gruberBG1
+
 return {
     normal = {
-        a = { fg = "#e4e4ef", bg = "#181818" },
-        b = { fg = "#e4e4ef", bg = "#181818" },
-        c = { fg = "#e4e4ef", bg = "#181818" },
+        a = { fg = fg, bg = bg },
+        b = { fg = fg, bg = bg },
+        c = { fg = fg, bg = bg },
     },
     insert = {
-        a = { fg = "#e4e4ef", bg = "#181818" },
-        b = { fg = "#e4e4ef", bg = "#181818" },
-        c = { fg = "#e4e4ef", bg = "#181818" },
+        a = { fg = fg, bg = bg },
+        b = { fg = fg, bg = bg },
+        c = { fg = fg, bg = bg },
     },
     visual = {
-        a = { fg = "#e4e4ef", bg = "#181818" },
-        b = { fg = "#e4e4ef", bg = "#181818" },
-        c = { fg = "#e4e4ef", bg = "#181818" },
+        a = { fg = fg, bg = bg },
+        b = { fg = fg, bg = bg },
+        c = { fg = fg, bg = bg },
     },
     replace = {
-        a = { fg = "#e4e4ef", bg = "#181818" },
-        b = { fg = "#e4e4ef", bg = "#181818" },
-        c = { fg = "#e4e4ef", bg = "#181818" },
+        a = { fg = fg, bg = bg },
+        b = { fg = fg, bg = bg },
+        c = { fg = fg, bg = bg },
     },
     command = {
-        a = { fg = "#e4e4ef", bg = "#181818" },
-        b = { fg = "#e4e4ef", bg = "#181818" },
-        c = { fg = "#e4e4ef", bg = "#181818" },
+        a = { fg = fg, bg = bg },
+        b = { fg = fg, bg = bg },
+        c = { fg = fg, bg = bg },
     },
 }
