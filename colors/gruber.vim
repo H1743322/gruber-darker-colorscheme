@@ -121,6 +121,7 @@ call s:HI('lightGreen',	    s:lightGreen)
 call s:HI('Visual',         s:none,             s:gruberBG3)
 call s:HI('VisualNOS',      s:gruberRed)
 call s:HI('Normal',         s:gruberFG,         s:gruberBG)
+hi! link NormalFloat        Normal
 
 call s:HI('Cursor',         s:none,             s:gruberYellow)
 "call s:HI('lCursor',        s:none,             s:gruberYellow)
@@ -142,9 +143,9 @@ call s:HI('IncSearch',      s:gruberBlack,      s:gruberFG1)
 
 call s:HI('Bold',           s:none,             s:none,             s:bold)
 call s:HI('Italic',         s:none,             s:none,             s:italic)
-call s:HI('Debug',          s:gruberRedm1)
+call s:HI('Debug',          s:gruberRed1)
 call s:HI('Directory',      s:gruberBlue)
-call s:HI('ErrorMsg',       s:gruberRedm1,      s:none)
+call s:HI('ErrorMsg',       s:gruberRed1)
 "call s:HI('Exception',      s:gruberBrown)
 "call s:HI('Folded',         s:gruberBrown,      s:gruberFG2)        "s:italic)
 "
