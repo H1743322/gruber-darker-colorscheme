@@ -177,8 +177,8 @@ hi! link FloatBorder        WinSeparator
 call s:HI('helpExample',    s:gruberYellow)
 call s:HI('helpCommand',    s:gruberYellow)
 call s:HI('Special',        s:gruberFG)
-"
-call s:HI('TabLineSel',     s:gruberFG,         s:gruberBG1,        s:bold)
+
+call s:HI('TabLineSel',     s:gruberFG2,        s:gruberBG2)
 call s:HI('TabLine',        s:gruberFG,         s:none)
 call s:HI('TabLineFill',    s:none,             s:none)
 
