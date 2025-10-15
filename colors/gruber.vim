@@ -148,7 +148,7 @@ call s:HI('Directory',      s:gruberBlue)
 call s:HI('ErrorMsg',       s:gruberRed1)
 "call s:HI('Exception',      s:gruberBrown)
 "call s:HI('Folded',         s:gruberBrown,      s:gruberFG2)        "s:italic)
-"
+
 call s:HI('Macro',          s:gruberFG)
 call s:HI('ModeMsg',        s:gruberFG)
 call s:HI('MoreMsg',        s:gruberFG)
@@ -157,7 +157,7 @@ call s:HI('SpecialKey',     s:gruberFG)
 call s:HI('SpecialChar',    s:gruberGreen)
 call s:HI('TooLong',        s:gruberFG)
 call s:HI('Underlined',     s:gruberWisteria,   s:none,             s:underline)
-"//
+
 call s:HI('WarningMsg',     s:lightYellow)
 call s:HI('WildMenu',       s:gruberBlack,      s:gruberYellow)
 call s:HI('CmdLine',        s:gruberFG,         s:gruberBG)
@@ -184,8 +184,9 @@ call s:HI('TabLineFill',    s:none,             s:none)
 
 call s:HI('EndOfBuffer',    s:gruberBG,         s:none)
 hi! link NonText EndOfBuffer
+" }}}
 
-" Terminal:
+" Terminal: {{{
 let g:terminal_color_foreground = s:gruberWhite[0]
 let g:terminal_color_background = s:gruberBG1[0]
 let g:terminal_color_0          = s:gruberBG1[0]
@@ -204,8 +205,9 @@ let g:terminal_color_12         = s:gruberNiagara[0]
 let g:terminal_color_13         = s:gruberWisteria[0]
 let g:terminal_color_14         = s:gruberNiagara[0]
 let g:terminal_color_15         = s:gruberFG[0]
+" }}}
 
-" {{{ Syntax:
+" Syntax: {{{
 " Comments
 hi! link Comment            gruberBrown
 hi! link CommentDelimiter   gruberBrown
@@ -242,10 +244,11 @@ hi! link Type               gruberQuartz
 hi! link StorageClass       gruberYellow
 hi! link Structure          gruberNiagara
 hi! link Typedef            gruberQuartz
+" }}}
 
 
 " TreeSitter: {{{
-"
+
 " Comments
 hi! link @comment           Comment
 hi! link @comment.delimiter CommentDelimiter
@@ -324,7 +327,7 @@ hi! link CmpItemKindModule      Type
 hi! link CmpItemKindProperty    Identifier
 hi! link CmpItemKindKeyword     Keyword
 hi! link CmpItemKindSnippet     gruberWisteria
-" }}}}"
+" }}}}
 
 " Nvim Tree: {{{
 hi! link NvimTreeFolderIcon       Directory
@@ -344,7 +347,7 @@ hi! link NvimTreeCursor           Cursor
 hi! link NvimTreeVertSplit        WinSeparator
 " }}}
 
-" Telescope:  {{{
+" Telescope: {{{
 hi! link TelescopeNormal          Normal
 hi! link TelescopeSelection       CursorLine
 hi! link TelescopeSelectionCaret  Keyword
@@ -366,8 +369,7 @@ hi! link diffLine           lightYellow
 hi! link GitSignsAdd        DiffAdd
 hi! link GitSignsDelete     DiffDelete
 call s:HI('GitSignsChange', s:lightYellow)
-
-"}}}}
+" }}}
 
 " LSP: {{{
 call s:HI('DiagnosticUnnecessary', s:none,      s:none)
@@ -376,7 +378,7 @@ call s:HI('DiagnosticUnnecessary', s:none,      s:none)
 "UndoTree: {{{
 hi! link UndotreeSavedBig   MatchParen
 hi! link UndotreeCurrent    Statement
-"}}}
+" }}}
 
 " Fugitive: {{{
 hi! link fugitiveUntrackedHeading   PreProc
