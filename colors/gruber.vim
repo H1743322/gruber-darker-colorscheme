@@ -359,8 +359,8 @@ hi! link TelescopeBorder          WinSeparator
 " Diff: {{{{
 hi! link DiffAdd            lightGreen
 hi! link DiffDelete         lightRed
-call s:HI('DiffChange',     s:none,             s:gruberBG2)
-call s:HI('DiffText',       s:gruberBlack,      s:gruberQuartz)
+call s:HI('DiffChange',     s:none,                 s:gruberBG2)
+call s:HI('DiffText',       s:gruberBlack,          s:gruberQuartz)
 
 hi! link diffAdded          DiffAdd
 hi! link diffRemoved        DiffDelete
@@ -372,7 +372,7 @@ call s:HI('GitSignsChange', s:lightYellow)
 " }}}
 
 " LSP: {{{
-call s:HI('DiagnosticUnnecessary', s:none,      s:none)
+call s:HI('DiagnosticUnnecessary',  s:none,         s:none)
 " }}}
 
 "UndoTree: {{{
@@ -384,4 +384,10 @@ hi! link UndotreeCurrent    Statement
 hi! link fugitiveUntrackedHeading   PreProc
 hi! link fugitiveUnstagedHeading    gruberWisteria
 hi! link fugitiveStagedHeading      gruberWisteria
+" }}}
+
+" QuickFix: {{{
+hi! link qfLineNr               gruberYellow
+hi! link qfText                 gruberFG
+call s:HI('QuickFixLine',       s:none,             s:gruberBG2)
 " }}}
