@@ -279,7 +279,7 @@ hi! link @label             Label
 " Keywords / Statements
 hi! link @keyword           Keyword
 hi! link @keyword.function  Keyword
-hi! link @keyword.operator  Operator
+hi! link @keyword.operator  Keyword
 hi! link @keyword.return    Keyword
 hi! link @conditional       Conditional
 hi! link @repeat            Repeat
