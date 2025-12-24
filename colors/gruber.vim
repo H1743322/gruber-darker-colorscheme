@@ -121,7 +121,7 @@ call s:HI('lightGreen',	    s:lightGreen)
 call s:HI('Visual',         s:none,             s:gruberBG3)
 call s:HI('VisualNOS',      s:gruberRed)
 call s:HI('Normal',         s:gruberFG,         s:gruberBG)
-hi! link NormalFloat        Normal
+call s:HI('NormalFloat',    s:gruberFG,         s:gruberBG1)
 
 call s:HI('Cursor',         s:none,             s:gruberYellow)
 "call s:HI('lCursor',        s:none,             s:gruberYellow)
@@ -168,7 +168,7 @@ call s:HI('ColorColumn',    s:none,             s:none)
 call s:HI('FoldColumn',     s:none,             s:none)
 
 hi! link PmenuSel           Visual
-hi! link Pmenu              Normal
+hi! link Pmenu              NormalFloat
 call s:HI('PmenuSbar',      s:none,             s:gruberBG1)
 call s:HI('PmenuThumb',     s:none,             s:gruberBG3)
 hi! link FloatBorder        WinSeparator
