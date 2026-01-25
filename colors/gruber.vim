@@ -242,7 +242,7 @@ hi! link PreCondit          gruberQuartz
 " Types
 hi! link Type               gruberQuartz
 hi! link StorageClass       gruberYellow
-hi! link Structure          gruberNiagara
+hi! link Structure          gruberYellow
 hi! link Typedef            gruberQuartz
 " }}}
 
@@ -266,7 +266,7 @@ hi! link @macro             Macro
 
 " Identifiers / Functions
 hi! link @variable          Identifier
-hi! link @variable.builtin  Function
+hi! link @variable.builtin  Identifier
 hi! link @function          Function
 hi! link @function.builtin  Keyword
 hi! link @constructor       Function
