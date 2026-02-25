@@ -5,4 +5,4 @@ https://github.com/rexim/gruber-darker-theme
 
 
 ## Theme
-![42](42.png)
+![42](doc/42.png)
