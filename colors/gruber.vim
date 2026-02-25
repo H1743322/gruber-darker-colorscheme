@@ -292,14 +292,14 @@ hi! link @type.builtin      Type
 hi! link @structure         Structure
 hi! link @class             Type
 hi! link @interface         Type
-hi! link @module            Type
-hi! link @namespace         Type
+hi! link @module            Identifier
+hi! link @namespace         Identifier
 hi! link @storageclass      StorageClass
 hi! link @typedef           Typedef
 hi! link @preproc           PreProc
 hi! link @include           Include
 hi! link @define            Define
-hi! link @precondit         PreCondit
+hi! link @preproc           PreCondit
 
 hi! link @punctuation.bracket   Delimiter
 hi! link @punctuation.delimiter Delimiter
