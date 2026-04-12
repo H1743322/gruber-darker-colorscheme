@@ -244,6 +244,10 @@ hi! link Type               gruberQuartz
 hi! link StorageClass       gruberYellow
 hi! link Structure          gruberYellow
 hi! link Typedef            gruberQuartz
+
+" JS
+hi! link javaScriptBraces   Delimiter
+
 " }}}
 
 
