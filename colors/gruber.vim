@@ -216,7 +216,7 @@ hi! link Delimiter          gruberFG
 hi! link Tag                gruberYellow
 
 " Constants / Literals
-hi! link Constant           gruberFG
+hi! link Constant           gruberYellow
 hi! link String             gruberGreen
 hi! link Character          gruberGreen
 hi! link Number             gruberFG
@@ -248,6 +248,8 @@ hi! link Typedef            gruberQuartz
 " JS
 hi! link javaScriptBraces   Delimiter
 
+" Git
+hi! link gitcommitSummary   Identifier
 " }}}
 
 
